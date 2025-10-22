@@ -1,0 +1,707 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funmilayo & Family - Hair Salon</title>
+    <meta name="description" content="High-end hair salon offering styling, coloring, and beauty treatments. Book your appointment today!">
+    <meta name="keywords" content="hair salon, hairdresser, stylist, beauty, haircuts, coloring, styling, booking">
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="icon" href="favicon.ico" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80"> <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Funmilayo & Family Hair-salon</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#stylists">Stylists</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-brand" href="#booking">
+                            Book Now <i class="fas fa-arrow-right ms-1 small"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Experience True Elegance</h1>
+            <p>Discover your best look with our expert stylists and premium services.</p>
+            <a href="#booking" class="btn btn-brand btn-lg">
+                Book Appointment <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Our Salon</h2>
+                <p>Crafting beauty and confidence since 2001.</p>
+            </div>
+            <div class="row align-items-center"  >
+                 <div class="col-lg-6">
+                    <img class="d-block w-100" src="images/Screenshot_20251019-183157.jpg" alt="Salon Interior" class="img-fluid rounded shadow-lg">
+                    </div>
+                <div class="col-lg-6">
+                    <h3>Our Story</h3>
+                    <p>Funmilayo & Family was founded with a simple mission: to provide exceptional hair care in a luxurious and welcoming environment. We believe that a great hairstyle can transform not just your look, but your entire outlook.</p>
+                    <h4>Our Mission & Values</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle text-primary me-2"></i> Excellence in every service.</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i> Using only premium, sustainable products.</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i> Continuous learning and innovation.</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i> Creating a relaxing and pampering experience.</li>
+                    </ul>
+                    <a href="#stylists" class="btn btn-outline-brand mt-3">Meet Our Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Indulge in our wide range of professional hair treatments.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-cut"></i></div>
+                        <h4> Hairdressing & Styling</h4>
+                        <p> creative styling for  women, and children.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-palette"></i></div>
+                        <h4>Hair Coloring</h4>
+                        <p>From subtle highlights to bold transformations, using top-quality dyes.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-spa"></i></div>
+                        <h4>Special Treatments</h4>
+                        <p>Keratin, deep conditioning, and scalp treatments for healthy, vibrant hair.</p>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-female"></i></div>
+                        <h4>Bridal & Events</h4>
+                        <p>Elegant updos and styling for weddings and special occasions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-leaf"></i></div>
+                        <h4>Natural Hair Care</h4>
+                        <p>Specialized care and styling for natural and textured hair types.</p>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-hand-sparkles"></i></div>
+                        <h4>Manicures & Pedicures</h4>
+                        <p>Complete your look with our nail care services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Gallery</h2>
+                <p>See the transformations and styles we've created.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-4 col-sm-6 gallery-item">
+                    <a href="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/hair-style-1.webp" data-bs-toggle="modal" data-bs-target="#galleryModal1">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/hair-style-1.webp" alt="Hairstyle 1" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 gallery-item">
+                     <a href="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/hair-style-2.webp" data-bs-toggle="modal" data-bs-target="#galleryModal2">
+                        <img src="images/web image.jpg" alt="Hairstyle 2" class="img-fluid" id="my_img">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 gallery-item">
+                    <a href="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/hair-style-3.webp" data-bs-toggle="modal" data-bs-target="#galleryModal3">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/hair-style-3.webp" alt="Hairstyle 3" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 gallery-item">
+                     <a href="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/hair-style-4.webp" data-bs-toggle="modal" data-bs-target="#galleryModal4">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/hair-style-4.webp" alt="Hairstyle 4" class="img-fluid">
+                    </a>
+                </div>
+                 <div class="col-lg-3 col-md-4 col-sm-6 gallery-item">
+                    <a href="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/hair-style-5.webp" data-bs-toggle="modal" data-bs-target="#galleryModal5">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/hair-style-5.webp" alt="Hairstyle 5" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 gallery-item">
+                     <a href="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/hair-style-6.webp" data-bs-toggle="modal" data-bs-target="#galleryModal6">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/hair-style-6.webp" alt="Hairstyle 6" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 gallery-item">
+                    <a href="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/hair-style-7.webp" data-bs-toggle="modal" data-bs-target="#galleryModal7">
+                        <img src="images/web img.jpg" alt="Hairstyle 7" class="img-fluid" id="my_img">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 gallery-item">
+                     <a href="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/hair-style-8.webp" data-bs-toggle="modal" data-bs-target="#galleryModal8">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/hair-style-8.webp" alt="Hairstyle 8" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="galleryModal1" tabindex="-1" aria-labelledby="galleryModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="galleryModal1Label">Style Showcase</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/hair-style-1.webp" class="img-fluid" alt="Hairstyle 1 Large">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="galleryModal2" tabindex="-1" aria-labelledby="galleryModal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="galleryModal2Label">Style Showcase</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/hair-style-2.webp" class="img-fluid" alt="Hairstyle 2 Large">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="galleryModal3" tabindex="-1" aria-labelledby="galleryModal3Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="galleryModal3Label">Style Showcase</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/hair-style-3.webp" class="img-fluid" alt="Hairstyle 3 Large">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="galleryModal4" tabindex="-1" aria-labelledby="galleryModal4Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="galleryModal4Label">Style Showcase</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/hair-style-4.webp" class="img-fluid" alt="Hairstyle 4 Large">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="galleryModal5" tabindex="-1" aria-labelledby="galleryModal5Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="galleryModal5Label">Style Showcase</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/hair-style-5.webp" class="img-fluid" alt="Hairstyle 5 Large">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="galleryModal6" tabindex="-1" aria-labelledby="galleryModal6Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="galleryModal6Label">Style Showcase</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/hair-style-6.webp" class="img-fluid" alt="Hairstyle 6 Large">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="galleryModal7" tabindex="-1" aria-labelledby="galleryModal7Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="galleryModal7Label">Style Showcase</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/hair-style-7.webp" class="img-fluid" alt="Hairstyle 7 Large">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="galleryModal8" tabindex="-1" aria-labelledby="galleryModal8Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="galleryModal8Label">Style Showcase</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/hair-style-8.webp" class="img-fluid" alt="Hairstyle 8 Large">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section id="booking" class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Book Your Appointment</h2>
+                <p>Schedule your visit with us easily online.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="bookingForm" class="booking-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="bookingName" class="form-label" >Full Name</label>
+                                <input  type="text" class="form-control" id="bookingName" placeholder="Your Name" name="name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label  for="bookingEmail" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="bookingEmail" placeholder="your@email.com" name="email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="bookingPhone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="bookingPhone" placeholder="Your Phone" name="number" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="bookingService" class="form-label">Select Service</label>
+                                <select class="form-select" id="bookingService" name="your preferred service" required>
+                                    <option selected disabled value="">Choose a service...</option>
+                                    <option value="haircut">ordinary Washing</option>
+                                    <option value="coloring">Relaxing & setting</option>
+                                    <option value="treatment">ordinary relaxing</option>
+                                    <option value="bridal">washing & setting</option>
+                                    <option value="natural">knotless braid</option>
+                                    <option value="nails">Ghana weaving</option>
+                                    <option value="nails">crochet</option>
+                                    <option value="nails">ordinary bob marley</option>
+                                    <option value="nails">twisting</option>
+                                    <option value="nails">packing jel</option>
+                                    <option value="nails">basic weaving(All back)</option>
+                                    <option value="nails">locking of hair</option>
+                                    <option value="nails">weavon</option>
+                                    <option value="nails">others</option>
+                                    <!---<option value="nails">packing jel</option>--->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="bookingDate" class="form-label">Preferred Date</label>
+                                <input type="text" class="form-control" id="bookingDate" placeholder="Select Date" name="date" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="bookingTime" class="form-label">Preferred Time</label>
+                                <input type="text" class="form-control" id="bookingTime" placeholder="Select Time" name="preferred time" required>
+                            </div>
+                        </div> 
+                        <div class="mb-3">
+                            <label for="bookingMessage" class="form-label">Additional Notes (optional)</label>
+                            <textarea class="form-control" id="bookingMessage" rows="3" placeholder="Any specific requests?" name="your massage"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-brand" >Request Appointment <i class="fas fa-calendar-check ms-2"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Pricing</h2>
+                <p>Transparent pricing for all our premium services.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="pricing-card">
+                        <h4>Styling</h4>
+                        <div class="price"> <span></span></div>
+                        <ul>
+                            <li >basic weaving(All back, for children)<span class="price">#500</span> </li>
+                            <li>Ghana weaving(All back, for children) <span class="price">#1000</span> </li>
+                            <li>basic weaving(All back, for Adult) <span class="price">#1000</span></li>
+                            <li>Ghana weaving(All back, for adult) <span class="price">#2000</span></li>
+                            <li>-</li>
+                        </ul>
+                        <a href="#booking" class="btn btn-outline-brand">Book Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="pricing-card">
+                        <h4>Hair treatment</h4>
+                        <div class="price"> <span>onwards</span></div>
+                        <ul>
+                            <li>Washing <span class="price">#500</span></li>
+                            <li>Relaxing<span class="price">#1000</span></li>
+                            <li>washing & setting <span class="price">#1500</span></li>
+                            <li>relaxing & setting<span class="price">#2000</span>
+                            <li>others</li>
+                        </ul>
+                        <a href="#booking" class="btn btn-brand">Book Now <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="pricing-card">
+                        <h4>Luxury Treatment</h4>
+                        <div> <span></span>
+                        <ul>
+                            <li>knotless braid(for adult) <span class="price">#5000</span></li>
+                            <li>knotless braid(for children) <span class="price">#2000</span></li>
+                            <li>ordinary bob marley(for adult) <span class="price">#3500</span></li>
+                            <li>ordinary bob marley(for children) <span class="price">#1500</span></li>
+                            <li>crochet (for adult) <span class="price">#2500</span></li>
+                            <li>crochet(for children) <span class="price">#1500</span></li>
+                        </ul>
+                        <a href="#booking" class="btn btn-outline-brand">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---<section id="stylists" class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet Our Stylists</h2>
+                <p>Our talented team of passionate hair professionals.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stylist-card">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/stylist-1.webp" alt="Stylist Ava">
+                        <h4>Ava Miller</h4>
+                        <p class="role">Master Stylist</p>
+                        <p class="small">10+ years of experience, specializes in color transformations.</p>
+                        <div class="stylist-socials">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stylist-card">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/stylist-2.webp" alt="Stylist Leo">
+                        <h4>Leo Chen</h4>
+                        <p class="role">Senior Stylist</p>
+                        <p class="small">Expert in modern cuts and men's grooming.</p>
+                         <div class="stylist-socials">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stylist-card">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/stylist-3.webp" alt="Stylist Mia">
+                        <h4>Mia Rodriguez</h4>
+                        <p class="role">Stylist & Bridal Expert</p>
+                        <p class="small">Creative updos and event hairstyling specialist.</p>
+                         <div class="stylist-socials">
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stylist-card">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/stylist-4.webp" alt="Stylist Sam">
+                        <h4>Sam Taylor</h4>
+                        <p class="role">Junior Stylist</p>
+                        <p class="small">Passionate about natural hair care and treatments.</p>
+                         <div class="stylist-socials">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>---->
+
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Love</h2>
+                <p>What our clients say about their Funmilayo & Family experience.</p>
+            </div>
+            <div class="testimonial-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/client-2.webp" alt="Client Jane Smith">
+                        <p>"Absolutely loved my new haircut! The stylist really listened to what I wanted and delivered perfectly. The salon atmosphere is so relaxing too."</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="client-name">Jane S.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/client-1.webp" alt="Client Michael Doe">
+                        <p>"Best hair coloring service I've ever had. The color is vibrant and exactly what I asked for. Highly recommend this salon!"</p>
+                         <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="client-name">Michael D.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/client-4.webp" alt="Client Lisa K.">
+                        <p>"The team is incredibly talented and friendly. I always leave feeling refreshed and beautiful. My go-to salon for everything hair!"</p>
+                         <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="client-name">Lisa K.</p>
+                    </div>
+                     <div class="swiper-slide">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/client-3.webp" alt="Client Robert P.">
+                        <p>"Professional, clean, and they use great products. My stylist gave me some excellent tips for hair care at home. Will be back!"</p>
+                         <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                        <p class="client-name">Robert P.</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hair Care & Trends</h2>
+                <p>Latest tips, product recommendations, and style inspiration.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="blog-card">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/blogs-1.webp" alt="Blog Post 1">
+                        <div class="card-body">
+                            <p class="text-muted small">May 21, 2025 | Hair Care</p>
+                            <h5 class="card-title">5 Essential Tips for Healthy Summer Hair</h5>
+                            <p class="card-text">Keep your locks luscious and protected during the sunny months with these expert tips...</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right small"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="blog-card">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/blogs-2.webp" alt="Blog Post 2">
+                        <div class="card-body">
+                             <p class="text-muted small">May 18, 2025 | Trends</p>
+                            <h5 class="card-title">Top Hairstyle Trends for Fall 2025</h5>
+                            <p class="card-text">Discover the hottest looks for the upcoming season, from chic bobs to bold colors...</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right small"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="blog-card">
+                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/Hair%20Salon%20Website/blogs-3.webp" alt="Blog Post 3">
+                        <div class="card-body">
+                            <p class="text-muted small">May 12, 2025 | Products</p>
+                            <h5 class="card-title">Our Favorite Sulfate-Free Shampoos</h5>
+                            <p class="card-text">Why sulfate-free is better for your hair and our top picks for every hair type...</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right small"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common queries about our services.</p>
+            </div>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What are your salon hours?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Our salon is open monday to Saturday from 9:00 AM to 7:00 PM, and Sunday from 2pm to 7pm.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Do I need to book an appointment?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            While walk-ins are welcome if we have availability, we highly recommend booking an appointment in advance to ensure you get your preferred time and stylist. You can book online or call us.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            What is your cancellation policy?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We kindly request at least 24 hours notice for any cancellations or rescheduling. Late cancellations or no-shows may be subject to a fee.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            What products do you use?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We use a curated selection of high-quality, professional hair care products, including options that are sulfate-free, paraben-free, and cruelty-free. Our stylists can recommend the best products for your hair type and needs.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>We'd love to hear from you. Contact us for appointments or inquiries.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 contact-info">
+                    <h3>Funmilayo & Family Salon</h3>
+                    <p><i class="fas fa-map-marker-alt icon"></i> no 1, bayooyesanya street, isawo, ikorodu, lagos state</p>
+                    <p><i class="fas fa-phone icon"></i> 09161768366</p>
+                    <p><i class="fas fa-envelope icon"></i>fobanla8@gmail.com</p>
+                    <h4 class="mt-4">Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <form id="contactForm" class="contact-form" action="https://wa.me/+2349161768366" method="post" enctype="text/plain">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="contactName" class="form-label visually-hidden">Name</label>
+                                <input type="text" class="form-control" id="contactName" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="contactEmail" class="form-label visually-hidden">Email</label>
+                                <input type="email" class="form-control" id="contactEmail" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                             <label for="contactSubject" class="form-label visually-hidden">Subject</label>
+                            <input type="text" class="form-control" id="contactSubject" placeholder="Subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label visually-hidden">Message</label>
+                            <textarea class="form-control" id="contactMessage" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-brand">Send Message <i class="fas fa-paper-plane ms-2"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                     <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2000000000003!2d-73.98513088459241!3d40.75889497932688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c645f4af%3A0x7d89729890971726!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="currentYear"></span>Funmilayo & family Hair-Salon. All Rights Reserved.</p>
+            <p>Designed with <i class="fas fa-heart text-danger"></i> by Favour</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="index.js"></script>
+</body>
+</html>
